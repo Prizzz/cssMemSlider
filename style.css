@@ -15,6 +15,7 @@ body {
     width: 60%;
 	height: 400px;
 	margin: auto;
+	transition: none;
 }
 
 .slider {
