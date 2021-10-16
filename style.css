@@ -61,7 +61,6 @@ body {
 #slide5:checked ~ .slider > .slide5 {
 	opacity: 1;
 	z-index: 1;
-	transform: scale(1);
 }
 
 .wrapper > input {
@@ -71,7 +70,7 @@ body {
 .wrapper .controls {
     width: max-content;
     position: relative;
-    left: calc(100% - 200px);
+    left: calc(100% - 190px);
 }
 
 .wrapper label {
@@ -93,6 +92,10 @@ body {
 	background: #ddd;
 }
 
+.wrapper label:active {
+	background: #707070;
+}
+
 .wrapper label:after {
 	content: " ";
 	display: block;
@@ -105,13 +108,22 @@ body {
 	border-radius: 50%;
 }
 
+.wrapper label:before {
+	position:absolute;
+    content:'';
+    top:-10px;
+    right:-10px;
+    left:-10px;
+    bottom:-10px;
+}
+
 @media (max-width: 900px) {
 	.wrapper {
 		width: 80%;
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 	.wrapper {
 		width: 95%;
 	}
